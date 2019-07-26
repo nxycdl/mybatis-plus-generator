@@ -1,14 +1,11 @@
 package com.ycfd.mybatisplusgenerator.generator;
-import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
 import com.baomidou.mybatisplus.generator.InjectionConfig;
 import com.baomidou.mybatisplus.generator.config.*;
-import com.baomidou.mybatisplus.generator.config.builder.ConfigBuilder;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
-import com.baomidou.mybatisplus.generator.config.rules.FileType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 
@@ -22,7 +19,7 @@ import java.util.Scanner;
  * @author dl
  */
 // 演示例子，执行 main 方法控制台输入模块表名回车自动生成对应项目目录中
-public class CodeGenerator {
+public class CodeGeneratorOracle {
 
 
     private static final String AUTHOR="dl";
@@ -30,10 +27,10 @@ public class CodeGenerator {
     private static final String PARENTPACKAGE="com.ycfd.userrole";
     private static final boolean ISCREATESERVICE = true;
     private static final boolean ISCREATECONTROLLER = false;
-    private static final String URL="jdbc:mysql://192.168.10.223:3306/wordpress?useUnicode=true&characterEncoding=utf8";
-    private static final String DIRVERNAME="com.mysql.jdbc.Driver";
-    private static final String USERNAME="ghost";
-    private static final String PASSWORD="ghost1234";
+    private static final String URL="jdbc:oracle:thin:@192.168.200.112:1521:orcl";
+    private static final String DIRVERNAME="oracle.jdbc.driver.OracleDriver";
+    private static final String USERNAME="NXSIWK";
+    private static final String PASSWORD="NXSIWK";
 
 
     /**
